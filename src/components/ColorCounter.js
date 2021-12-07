@@ -2,21 +2,20 @@ import React, {useState} from "react";
 import { View, Text, StyleSheet,TouchableOpacity } from "react-native";
 
 
-const ColorCounter = ({title}) => {
 
-const [colorCount, setColorCount]= useState(0);
+const ColorCounter = ({color,onIncrease,onDecrease}) => {
 
   return (
     <View>
 
-<Text style={{fontSize: 25}}>{title}</Text>
+<Text style={{fontSize: 25}}>{color}</Text>
 
-        <TouchableOpacity onPress={() => setColorCount(colorCount + 10) }>
-        <Text>Increase - {title}</Text>
+        <TouchableOpacity onPress={() => onIncrease() }>
+        <Text>Increase - {color}</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity onPress={() => setColorCount(colorCount - 10)}>
-        <Text>Decrease - {title}</Text>
+      <TouchableOpacity onPress={() => onDecrease()}>
+        <Text>Decrease - {color}</Text>
       </TouchableOpacity>
    
     </View>
