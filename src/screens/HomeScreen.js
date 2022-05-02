@@ -1,46 +1,44 @@
-import React from 'react';
-import { Text, StyleSheet, View, TouchableOpacity } from 'react-native';
+import React from "react";
+import { Text, StyleSheet, View, TouchableOpacity } from "react-native";
 
-const HomeScreen = ({navigation}) => {
+const HomeScreen = ({ navigation }) => {
   return (
     <View>
-      
       <Text style={styles.text}>HomeScreen</Text>
 
-      <TouchableOpacity onPress={() => navigation.navigate('ComponentsScreen')}>
+      <TouchableOpacity onPress={() => navigation.navigate("ComponentsScreen")}>
         <Text>Go to Components</Text>
       </TouchableOpacity>
-      
-      <TouchableOpacity onPress={() => navigation.navigate('List')}>
+
+      <TouchableOpacity onPress={() => navigation.navigate("List")}>
         <Text>Go to Lists</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity onPress={() => navigation.navigate('Image')}>
+      <TouchableOpacity onPress={() => navigation.navigate("Image")}>
         <Text>Go to Image</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity onPress={() => navigation.navigate('Counter')}>
+      <TouchableOpacity onPress={() => navigation.navigate("Counter")}>
         <Text>Go to Count</Text>
       </TouchableOpacity>
-      
-      <TouchableOpacity onPress={() => navigation.navigate('Color')}>
+
+      <TouchableOpacity onPress={() => navigation.navigate("Color")}>
         <Text>Go to Color Demo</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity onPress={() => navigation.navigate('Square')}>
+      <TouchableOpacity onPress={() => navigation.navigate("Square")}>
         <Text>Go to Square Demo</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity onPress={() => navigation.navigate('Text')}>
+      <TouchableOpacity onPress={() => navigation.navigate("Text")}>
         <Text>Go to Text Demo</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity onPress={() => navigation.navigate('Box')}>
+      <TouchableOpacity onPress={() => navigation.navigate("Box")}>
         <Text>Go to Box Object Model Demo</Text>
       </TouchableOpacity>
-
     </View>
-  ) 
+  );
 };
 
 const styles = StyleSheet.create({
